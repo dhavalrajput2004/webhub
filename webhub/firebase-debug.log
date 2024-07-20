@@ -1,0 +1,96 @@
+[debug] [2024-07-20T11:10:12.607Z] ----------------------------------------------------------------------
+[debug] [2024-07-20T11:10:12.609Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\91966\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-07-20T11:10:12.610Z] CLI Version:   13.13.3
+[debug] [2024-07-20T11:10:12.610Z] Platform:      win32
+[debug] [2024-07-20T11:10:12.610Z] Node Version:  v18.17.1
+[debug] [2024-07-20T11:10:12.612Z] Time:          Sat Jul 20 2024 16:40:12 GMT+0530 (India Standard Time)
+[debug] [2024-07-20T11:10:12.612Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-20T11:10:12.619Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-20T11:10:12.620Z] > authorizing via signed-in user (rajputdhavaljs@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\91966\Desktop\webhub
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-20T11:10:34.975Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-07-20T11:10:35.896Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-07-20T11:10:35.897Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ancw-47cca (Ancw) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-07-20T11:10:36.652Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ancw-47cca/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-07-20T11:10:36.653Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ancw-47cca/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/ancw-47cca
+[debug] [2024-07-20T11:10:38.776Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ancw-47cca/services/firebasedatabase.googleapis.com 200
+[debug] [2024-07-20T11:10:38.777Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ancw-47cca/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-07-20T11:10:38.781Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/ancw-47cca/locations/-/instances/ancw-47cca-default-rtdb [none]
+[debug] [2024-07-20T11:10:41.059Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/ancw-47cca/locations/-/instances/ancw-47cca-default-rtdb 200
+[debug] [2024-07-20T11:10:41.060Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/ancw-47cca/locations/-/instances/ancw-47cca-default-rtdb {"name":"projects/286720793292/locations/asia-southeast1/instances/ancw-47cca-default-rtdb","project":"projects/286720793292","databaseUrl":"https://ancw-47cca-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-07-20T11:10:46.723Z] >>> [apiv2][query] GET https://ancw-47cca-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-07-20T11:10:47.242Z] <<< [apiv2][status] GET https://ancw-47cca-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-07-20T11:10:47.242Z] <<< [apiv2][body] GET https://ancw-47cca-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for ancw-47cca-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[debug] [2024-07-20T11:10:47.254Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ancw-47cca [none]
+[debug] [2024-07-20T11:10:48.023Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ancw-47cca 200
+[debug] [2024-07-20T11:10:48.023Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ancw-47cca {"projectId":"ancw-47cca","projectNumber":"286720793292","displayName":"Ancw","name":"projects/ancw-47cca","resources":{"hostingSite":"ancw-47cca","realtimeDatabaseInstance":"ancw-47cca-default-rtdb"},"state":"ACTIVE","etag":"1_b174a4c5-d256-4360-b161-c12acee03a7b"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-07-20T11:11:52.670Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-07-20T11:11:52.968Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-07-20T11:11:52.968Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.4","browserURL":"https://www.gstatic.com/firebasejs/10.12.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.4/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.4/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.4/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.4/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.4/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.4/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.4/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.4/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.4/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.4/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.4/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.memory.js"}}
+[info] +  Wrote webhub/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\91966\Desktop\webhub is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=779781702&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-07-20T11:15:44.369Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-07-20T11:15:44.370Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-07-20T11:15:44.883Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-07-20T11:15:44.884Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-07-20T11:15:44.906Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-07-20T11:15:45.402Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-07-20T11:15:45.404Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"dhavalrajput2004","id":104291006,"node_id":"U_kgDOBjdavg","avatar_url":"https://avatars.githubusercontent.com/u/104291006?v=4","gravatar_id":"","url":"https://api.github.com/users/dhavalrajput2004","html_url":"https://github.com/dhavalrajput2004","followers_url":"https://api.github.com/users/dhavalrajput2004/followers","following_url":"https://api.github.com/users/dhavalrajput2004/following{/other_user}","gists_url":"https://api.github.com/users/dhavalrajput2004/gists{/gist_id}","starred_url":"https://api.github.com/users/dhavalrajput2004/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dhavalrajput2004/subscriptions","organizations_url":"https://api.github.com/users/dhavalrajput2004/orgs","repos_url":"https://api.github.com/users/dhavalrajput2004/repos","events_url":"https://api.github.com/users/dhavalrajput2004/events{/privacy}","received_events_url":"https://api.github.com/users/dhavalrajput2004/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2022-04-24T05:02:32Z","updated_at":"2024-04-24T06:32:07Z","private_gists":0,"total_private_repos":1,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as dhavalrajput2004 
+[info] 
+[debug] [2024-07-20T11:16:15.844Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-07-20T11:16:16.293Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-07-20T11:16:16.293Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
